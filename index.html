@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SecondTask</title>
+  <link rel="stylesheet" href="css/mainWithSass.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background-color: #323B55">
+  
+  <div class="app">
+    <form class="slick-login" v-on:submit.prevent="addNewName">
+      <label for="username"></label>
+      <input v-model="newNameText" id="username" type="text" name="username" class="placeholder" placeholder="Enter name master...">
+      <div v-on:click="addNewName" class="slick-login__button">ДОБАВИТЬ</div> 
+    </form>
+    <div class="container">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Names</a></li>
+        <li
+          is="name-item"
+          v-for="(element, index) in names"
+          v-bind:key="element.id"
+          v-bind:name="element.name"
+        ></li>
+      </ul>
+    </div>   
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
