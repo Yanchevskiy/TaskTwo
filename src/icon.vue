@@ -24,7 +24,7 @@ export default {
   },
   computed: {
     svgFullDir: function () {
-      return "tree/master/src/assets/sprite.svg" + this.element.icon
+      return "https://github.com/Yanchevskiy/TaskTwo/blob/master/src/assets/sprite.svg" + this.element.icon
     } 
   }
 }
