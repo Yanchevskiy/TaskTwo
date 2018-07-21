@@ -24,7 +24,7 @@ export default {
   },
   computed: {
     svgFullDir: function () {
-      return this.element.icon
+      return "sprite.svg" + this.element.icon
     } 
   }
 }
