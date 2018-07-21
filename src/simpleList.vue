@@ -1,6 +1,6 @@
 <template>
   <div class="app-list">
-    <object type="image/svg+xml" data="yanchevskiy.github.io/TaskTwo/src/assets/sprite.svg" v-show="false"></object>
+    <object type="image/svg+xml" data="src/assets/sprite.svg" v-show="false"></object>
     <h1 class="app__head">Разделы</h1> 
     <transition-group appear name="show" tag="ul">
       <icon 
